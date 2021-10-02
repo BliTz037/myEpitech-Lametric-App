@@ -1,0 +1,23 @@
+{
+  "name": "myepitech-lametric-app",
+  "version": "1.0.0",
+  "description": "A lametric-App that shows a multitide of data on Epitech's Intranet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BliTz037/myEpitech-Lametric-App.git"
+  },
+  "author": "BliTz_37",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BliTz037/myEpitech-Lametric-App/issues"
+  },
+  "homepage": "https://github.com/BliTz037/myEpitech-Lametric-App#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "express": "^4.17.1"
+  }
+}
