@@ -15,6 +15,9 @@ exports.getData = (req, res) => {
             }
         ]
     };
+    if (!params.hasOwnProperty('cookie') || !params.hasOwnProperty('show_data'))
+        return res.status(400).json({msg: "Missing parameter"});
+
     const showData = req.query.show_data.split(",")
     console.log(params);
     console.log(showData);

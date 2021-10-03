@@ -1,0 +1,49 @@
+{
+    "frames": [
+        {
+            "text": "Epitech",
+            "icon": 46869
+        },
+        {
+            "text": "Crédits",
+            "icon": 9360
+        },
+        {
+            "text": "120/160",
+            "icon": 9360
+        },
+        {
+            "text": "Netsoul",
+            "icon": 82
+        },
+        {
+            "text": "42.3h",
+            "icon": 82
+        },
+        {
+            "index": 5,
+            "chartData": [
+                7,
+                9,
+                6,
+                9,
+                6,
+                6,
+                0
+            ]
+        },
+        {
+            "text": "3.36 GPA",
+            "icon": null
+        },
+        {
+            "goalData": {
+                "start": 1,
+                "current": 120,
+                "end": 160,
+                "unit": "/ 160"
+            },
+            "icon": 9360
+        }
+    ]
+}
