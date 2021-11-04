@@ -1,11 +1,6 @@
 const { default: axios } = require('axios');
 const config = require('../config.json');
 const api = require('./api');
-/*
-params
-&cookie=abcdefg1234567
-&show_data=credits,netsoul,gpa,agenda
-*/
 
 function getCreditsScreen(credits, dataFormat) {
     dataFormat.frames.push({
@@ -33,7 +28,6 @@ function getGpaScreen(gpa, dataFormat) {
 }
 
 function getNetsoulScreen(netsoul, hoursWeek, dataFormat) {
-    console.log(netsoul)
     dataFormat.frames.push({
         "text": "NETSOUL",
         "icon": config.icon.netsoul
@@ -71,9 +65,7 @@ exports.getData = (req, res) => {
     }
 
     const showData = req.query.show_data.split(",");
-    console.log(showData);
     api.getIntraData(params.cookie).then(result => {
-        console.log(result);
         if (showData.includes("credits"))
             getCreditsScreen(result.profil.credits, dataFormat);
         if (showData.includes("gpa"))
