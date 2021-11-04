@@ -62,8 +62,13 @@ exports.getData = (req, res) => {
             }
         ]
     };
-    if (!params.hasOwnProperty('cookie') || !params.hasOwnProperty('show_data'))
-        return res.status(400).json({ msg: "Missing parameter" });
+    if (!params.hasOwnProperty('cookie') || !params.hasOwnProperty('show_data')) {
+        dataFormat.frames.push({
+            "text": "Bad Cookie",
+            "icon": config.icon.error
+        });
+        return res.status(200).json(dataFormat);
+    }
 
     const showData = req.query.show_data.split(",");
     console.log(showData);
