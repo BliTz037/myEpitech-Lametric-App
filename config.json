@@ -3,6 +3,10 @@
         "epitech": "46869",
         "credit": "9360",
         "netsoul": "82",
-        "gpa": "41409"
+        "gpa": "41409",
+        "error": "184"
+    },
+    "url": {
+        "profil": "https://intra.epitech.eu/user/?format=json"
     }
 }

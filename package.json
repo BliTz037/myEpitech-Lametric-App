@@ -4,7 +4,8 @@
   "description": "A lametric-App that shows a multitide of data on Epitech's Intranet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
