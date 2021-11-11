@@ -32,7 +32,7 @@ function getNetsoulScreen(netsoul, hoursWeek, dataFormat) {
     let chartData = [];
 
     for (let i of netsoul.slice(-10))
-        chartData.push(i[i.length - 1]);
+        chartData.push(i[1]);
 
     dataFormat.frames.push({
         "text": "NETSOUL",
